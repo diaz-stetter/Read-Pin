@@ -14,7 +14,7 @@ pin_13_value = response.json()['pins']['13']['value']
 send_message = {
   "kind": "send_message",
   "args": {
-    "message": "13: "+ pin_13_value ,
+    "message": "13: "+ str(pin_13_value) ,
     "message_type": "success"
   },
   "body": [
