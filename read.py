@@ -9,5 +9,5 @@ response = requests.post(os.environ['FARMWARE_URL'] + '/api/v1/bot/state',
               headers=headers)
 bot_state = response.json()
 
-position_x = response.json()['location_data']['position']['x']
+#position_x = response.json()['location_data']['position']['x']
 #pin_13_value = response.json()['pins']['13']['value']
