@@ -13,8 +13,11 @@ bot_state = response.json()
 
 position_x = response.json()['location_data']['position']['x']
 pin_13_value = response.json()['pins']['13']['value']
+value = {
+  "pin_value": pin_13_value
+}
 # Encode it as JSON...
-json_payload = json.dumps(pin_13_value)
+json_payload = json.dumps(value)
 """
 headers = {
   'Authorization': 'bearer {}'.format(API_TOKEN),
