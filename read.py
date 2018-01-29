@@ -15,7 +15,7 @@ pin_13_value = response.json()['pins']['13']['value']
 send_message = {
   "kind": "send_message",
   "args": {
-    "message": "Value of pin 13 is: " + str(pin_13_value),
+    "message": "Bot is at position {{ x }}, {{ y }}, {{ z }}.",
     "message_type": "success"
   },
   "body": [
