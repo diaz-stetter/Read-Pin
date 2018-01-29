@@ -10,11 +10,11 @@ response = requests.get(os.environ['FARMWARE_URL'] + '/api/v1/bot/state',
 bot_state = response.json()
 
 #position_x = response.json()['location_data']['position']['x']
-pin_13_value = response.json()['pins']['13']['value']
+pin_13_value = response.json()['pins']['59']['value']
 send_message = {
   "kind": "send_message",
   "args": {
-    "message": "13: "+ str(pin_13_value) ,
+    "message": "59: "+ str(pin_13_value) ,
     "message_type": "success"
   },
   "body": [
